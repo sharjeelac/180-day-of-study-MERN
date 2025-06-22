@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Dashboard</title>
+</head>
+<body>
+  <header>
+    <h1>Believer's Dashboard</h1>
+    <p><i>Indeed, the Qur'an is a guide to the believers.</i></p>
+    <hr />
+    <nav>
+      <a href="#">Home</a> &nbsp; | &nbsp;
+      <a href="#">Dashboard</a> &nbsp; | &nbsp;
+      <a href="#">Projects</a> &nbsp; | &nbsp;
+      <a href="#">Contact</a>
+    </nav>
+    <hr />
+  </header>
+
+  <main>
+    <!-- About Me -->
+    <section>
+      <h2>About Me</h2>
+      <article>
+        I am an aspiring <strong>MERN Stack Developer</strong>, a self-taught coder,
+        and a BS <b>Software Engineering</b> student at
+        <i>Virtual University</i>.
+      </article>
+
+      <h3>Hobbies</h3>
+      <ul>
+        <li>Coding</li>
+        <li>Reading</li>
+        <li>Traveling</li>
+      </ul>
+
+      <h3>Learning Goals</h3>
+      <ol>
+        <li>Complete MERN Stack</li>
+        <li>Improve DSA Skills</li>
+      </ol>
+    </section>
+
+    <hr />
+
+    <!-- Skills Table -->
+    <section>
+      <h2>Skills Table</h2>
+      <table border="1">
+        <caption><i>My Technical Skills</i></caption>
+        <thead>
+          <tr>
+            <th rowspan="2">Technology</th>
+            <th colspan="2">Details</th>
+          </tr>
+          <tr>
+            <th>Proficiency</th>
+            <th>Experience</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Advanced</td>
+            <td>High</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Advanced</td>
+            <td>High</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Intermediate</td>
+            <td>Very High</td>
+          </tr>
+          <tr>
+            <td>React</td>
+            <td>Intermediate</td>
+            <td>Very High</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr />
+
+    <!-- Form Section -->
+    <section>
+      <h2>Daily Routine Submission</h2>
+      <form>
+        <label>Name:</label>
+        <input type="text" name="name" placeholder="Enter your name" required />
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Enter your email" required /><br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password" /><br><br>
+
+        <label>Prayer Time:</label><br />
+        <input type="checkbox" name="fajr" />Fajr
+        <input type="checkbox" name="asr" />Asr
+        <input type="checkbox" name="maghrib" />Maghrib
+        <input type="checkbox" name="isha" />Isha<br><br>
+
+        <label>Choose Activity:</label>
+        <select name="activity">
+          <option>HTML</option>
+          <option>CSS</option>
+          <option>React</option>
+        </select><br><br>
+
+        <label>Energy Level:</label>
+        <input type="range" min="0" max="100" value="75" /><br><br>
+
+        <label>Comment:</label><br />
+        <textarea rows="4" cols="40" placeholder="Share your thoughts..."></textarea><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+
+    <hr />
+
+    <!-- Projects Section -->
+    <section>
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Weather App</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV_KzHHsJu3rPKhHP6UL0_qXgaZL4xS6y-Iw&s" alt="Weather App" width="150" />
+        <p>Weather App using <b>HTML</b>, <b>CSS</b> & <b>JavaScript</b>.</p>
+      </div>
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyo-wFFR4usHX-6P7Hbgub9TMgtEWhi_SxuA&s" alt="Portfolio" width="150" />
+        <p>Personal portfolio using semantic HTML structure.</p>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Quran Progress & Equation -->
+    <section>
+      <h2>Quran Progress</h2>
+      <p>Iman<sup>2</sup> + Amal<sup>2</sup> = Jannah<sub>InshaAllah</sub></p>
+    </section>
+
+    <hr />
+
+    <!-- HTML Entity Reference -->
+    <section>
+      <h2>HTML Entity Reference</h2>
+      <p>Use &lt;div&gt;, not &nbsp; unnecessarily. &hearts; this code! &copy; 2025</p>
+    </section>
+  </main>
+
+  <footer>
+    <hr />
+    <p>Contact: <a href="mailto:sharjeelac@gmail.com">sharjeelac@gmail.com</a></p>
+    <p>&copy; 2025 Sharjeel's Dev Space | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
