@@ -1,141 +1,100 @@
-/* Reset for consistent box model */
-* {
-    margin: 0; /* Box model: Reset margin */
-    padding: 0; /* Box model: Reset padding */
-    box-sizing: border-box; /* Box model: Consistent sizing */
+.flex-container {
+    display: flex;
+    border: 2px solid black;
 }
 
-/* Body styling */
-body {
-    background-color: #f4f7fa; /* Property: Light pastel blue-gray background */
-    color: #2d3436; /* Property: Dark gray text for readability */
-    font-family: 'Poppins', sans-serif; /* Property: Modern, clean font */
-    font-size: 16px; /* Property: Base font size */
+.box {
+    min-width: 100px;
+    height: 100px;
 }
 
-/* Container - Flexbox container */
-.container {
-    display: flex; /* Flexbox: Main container */
-    flex-direction: column; /* Flexbox: Stack vertically */
-    align-items: center; /* Flexbox: Center horizontally */
-    min-height: 100vh; /* Full viewport height */
-    padding: 40px; /* Box model: Generous padding for breathing space */
+.one {
+    background-color: blue;
+    flex-grow: 1;
 }
 
-/* Header - Flexbox container */
-.header {
-    display: flex; /* Flexbox: Header layout */
-    flex-direction: row; /* Flexbox: Horizontal layout */
-    justify-content: space-between; /* Flexbox: Space between title and nav */
-    align-items: center; /* Flexbox: Center vertically */
-    width: 100%; /* Property: Full width */
-    max-width: 1100px; /* Property: Max width for large screens */
-    padding: 20px; /* Box model: Padding */
-    margin-bottom: 50px; /* Box model: Margin below header */
-    border-bottom: 2px solid #ff7675; /* Box model: Pastel coral border */
+.two {
+    background-color: yellow;
+    flex-grow: 4;
 }
 
-/* Title styling */
-.title {
-    font-size: 2.5rem; /* Property: Large font size */
-    color: #6c5ce7; /* Property: Vibrant purple for brand vibe */
-    text-transform: capitalize; /* Property: Capitalized for elegance */
-    letter-spacing: 1px; /* Property: Subtle letter spacing */
-    padding: 10px; /* Box model: Padding around title */
+.three {
+    background-color: green;
+    flex-grow: 3;
 }
 
-/* Navigation - Flexbox container */
-.nav {
-    display: flex; /* Flexbox: Nav container */
-    flex-direction: row; /* Flexbox: Horizontal nav items */
-    gap: 20px; /* Flexbox: Space between nav items */
+.shrink-container {
+    display: flex;
+    border: 2px solid black;
+    margin-top: 20px;
 }
 
-/* Nav item styling */
-.nav-item {
-    font-size: 1.1rem; /* Property: Readable font size */
-    color: #2d3436; /* Property: Dark text */
-    padding: 12px 25px; /* Box model: Padding for clickable area */
-    border: 2px solid #6c5ce7; /* Box model: Purple border */
-    border-radius: 5px; /* Property: Subtle rounded corners for UX */
-    cursor: pointer; /* Property: Pointer on hover */
-    transition: all 0.3s ease; /* Property: Smooth hover transition */
+.shrink {
+    max-width: 500px;
+    width: 100%;
+    height: 100px;
+    flex-grow: 1;
 }
 
-/* Hover effect for nav items */
-.nav-item:hover {
-    background-color: #ff7675; /* Property: Pastel coral background */
-    color: #ffffff; /* Property: White text on hover */
-    border-color: #ff7675; /* Box model: Coral border on hover */
-    transform: translateY(-2px); /* Property: Subtle lift for interactivity */
+.shrink-container .s1{
+    background-color: aqua;
+    flex-shrink: 1;
 }
 
-/* Showcase section - Flexbox container */
-.showcase {
-    display: flex; /* Flexbox: Container for cards */
-    flex-direction: row; /* Flexbox: Horizontal layout */
-    flex-wrap: wrap; /* Flexbox: Wrap for responsiveness */
-    justify-content: center; /* Flexbox: Center cards horizontally */
-    align-items: stretch; /* Flexbox: Equal height cards */
-    gap: 30px; /* Flexbox: Generous space between cards */
-    max-width: 1100px; /* Property: Max width for layout */
-    padding: 20px; /* Box model: Padding */
+.shrink-container .s2{
+    background-color: bisque;
+    flex-shrink: 2;
 }
 
-/* Card styling - Flex item */
-.card {
-    flex-basis: 320px; /* Flexbox: Base width */
-    flex-grow: 1; /* Flexbox: Allow growth */
-    flex-shrink: 1; /* Flexbox: Allow shrinking */
-    background-color: #ffffff; /* Property: White card background */
-    border: 3px solid #ff7675; /* Box model: Pastel coral border */
-    padding: 25px; /* Box model: Inner padding for comfort */
-    margin: 15px; /* Box model: Margin around card */
-    text-align: center; /* Property: Centered text */
-    transition: transform 0.3s ease, border-color 0.3s ease; /* Property: Smooth hover */
+.shrink-container .s3{
+    background-color: yellowgreen;
+    flex-shrink: 3;
 }
 
-/* Card hover effect */
-.card:hover {
-    transform: scale(1.05); /* Property: Slight zoom for feedback */
-    border-color: #6c5ce7; /* Box model: Purple border on hover */
-    box-shadow: 0 8px 20px rgba(108, 92, 231, 0.2); /* Property: Subtle shadow for depth */
+
+
+.wrap-container {
+    display: flex;
+    border: 2px solid black;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
 
-/* Card title */
-.card-title {
-    font-size: 1.7rem; /* Property: Bold font size */
-    color: #6c5ce7; /* Property: Purple color */
-    margin-bottom: 15px; /* Box model: Margin below title */
-    text-transform: capitalize; /* Property: Capitalized for style */
+.wrap { 
+    min-width: 300px;
+    height: 100px;
+    flex-grow: 1;
 }
 
-/* Card description */
-.card-desc {
-    font-size: 1rem; /* Property: Readable font size */
-    color: #636e72; /* Property: Muted gray for contrast */
-    padding: 0 20px; /* Box model: Horizontal padding */
+.w1 {
+    background-color: violet;
+}
+.w2 {
+    background-color: tomato;
+}
+.w3 {
+    background-color: teal;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column; /* Flexbox: Stack header vertically */
-        align-items: center; /* Flexbox: Center items */
-        gap: 15px; /* Flexbox: Space between title and nav */
-    }
 
-    .showcase {
-        flex-direction: column; /* Flexbox: Stack cards vertically */
-        align-items: stretch; /* Flexbox: Full-width cards */
-    }
+.basis-container {
+    display: flex;
+    border: 2px solid black;
+    margin-top: 20px;
+}
 
-    .card {
-        flex-basis: 100%; /* Flexbox: Full width on small screens */
-        margin: 10px 0; /* Box model: Vertical margin */
-    }
+.basis { 
+    flex-basis: 500px;
+    height: 100px;
+    flex-grow: 1;
+}
 
-    .title {
-        font-size: 2rem; /* Property: Smaller title */
-    }
+.b1 {
+    background-color: violet;
+}
+.b2 {
+    background-color: tomato;
+}
+.b3 {
+    background-color: teal;
 }

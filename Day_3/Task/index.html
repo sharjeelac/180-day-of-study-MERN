@@ -3,34 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative Portfolio</title>
-    <link href="style.css" rel="stylesheet">
+    <title>CSS FLEX-BOX</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <h1 class="title">Vibe Portfolio</h1>
-            <nav class="nav">
-                <div class="nav-item">Home</div>
-                <div class="nav-item">Work</div>
-                <div class="nav-item">About</div>
-                <div class="nav-item">Contact</div>
-            </nav>
-        </header>
-        <main class="showcase">
-            <div class="card">
-                <h2 class="card-title">UI Design</h2>
-                <p class="card-desc">Crafting intuitive, beautiful interfaces.</p>
+    <div>
+        <div class="flex-container">
+            <div class="box one">
+                <p>Grow : 1</p>
             </div>
-            <div class="card">
-                <h2 class="card-title">Web Dev</h2>
-                <p class="card-desc">Building fast, responsive websites.</p>
+            <div class="box two">
+                <p>Grow : 4 </p>
             </div>
-            <div class="card">
-                <h2 class="card-title">Branding</h2>
-                <p class="card-desc">Creating memorable brand identities.</p>
+            <div class="box three">
+                <p>Grow : 3</p>
             </div>
-        </main>
+        </div>
+
+        
+        <div class="shrink-container">
+            <div class="shrink s1">
+                <p>Shrink : 1</p>
+            </div>
+            <div class="shrink s2">
+                <p>shrink : 2</p>
+            </div>
+            <div class="shrink s3">
+                <p>Shrink : 3</p>
+            </div>
+        </div>
+
+
+        <div class="wrap-container">
+            <div class="wrap w1">
+                <p>wrap</p>
+            </div>
+            <div class="wrap w2">
+                <p>wrap</p>
+            </div>
+            <div class="wrap w3">
+                <p>wrap</p>
+            </div>
+        </div>
+
+        <div class="basis-container">
+            <div class="basis b1">
+                <p>basis don't go outside unlike width </p>
+            </div>
+            <div class="basis b2">
+                <p>basis don't go outside unlike width </p>
+            </div>
+            <div class="basis b3">
+                <p>basis don't go outside unlike width </p>
+            </div>
+        </div>
+
+
     </div>
 </body>
 </html>
